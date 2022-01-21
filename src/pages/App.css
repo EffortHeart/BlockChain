@@ -1,0 +1,18 @@
+    @font-face {
+        font-family: 'Kanit';
+        src: url('../assets/fonts/Kanit/Kanit-Regular.ttf');
+    }
+
+    * {
+        font-family: 'Kanit' !important;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: rgb(122, 110, 170) !important;
+    }
+
+    input {
+        background-color: #ede9f7 !important;
+        color: #000 !important;
+    }

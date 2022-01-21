@@ -1,0 +1,6 @@
+<svg className="icon" width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.20765 9C0.374314 12.5 1.60765 19 13.2076 17" stroke="white" stroke-linecap="round"/>
+<path d="M14.7924 13C15.6257 9.5 14.3924 3 2.79235 5" stroke="white" stroke-linecap="round"/>
+<path d="M10 13L14 17L10 21" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 9L2 5L6 1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

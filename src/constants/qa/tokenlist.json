@@ -1,0 +1,85 @@
+{
+    "name": "FuseSwap Test List",
+    "timestamp": "2021-03-14T13:12:36.849Z",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "patch": 0
+    },
+    "tags": {},
+    "logoURI": "ipfs://QmQQGd3Kbb8fhxKQLvzPPngzBGd5aydV3QAigLHy53Hr3g",
+    "keywords": [
+      "fuseswap",
+      "fuse",
+      "default"
+    ],
+    "tokens": [
+      {
+        "name": "Test Two on Rospten",
+        "address": "0x09F6aE6421D6011a988A61e9e612b8873481FA75",
+        "symbol": "T2",
+        "decimals": 18,
+        "chainId": 3,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png"
+      },
+      {
+        "name": "Test One on Ropsten",
+        "address": "0x27fe41C34e1924358fAD5b56b840Baa80D77a4A1",
+        "symbol": "T1",
+        "decimals": 18,
+        "chainId": 3,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png"
+      },
+      {
+        "name": "Test Two on BSC",
+        "address": "0x7EFC567a4c433564649e8B043c29578DADDa4D6E",
+        "symbol": "T2",
+        "decimals": 18,
+        "chainId": 97,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png"
+      },
+      {
+        "name": "Test One on BSC",
+        "address": "0x1e1355F82d5F209f1Ef16a62Cc4c96E431e37f1f",
+        "symbol": "T1",
+        "decimals": 18,
+        "chainId": 97,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png"
+      },
+      {
+        "name": "Test Two on Fuse",
+        "address": "0xb681dF9480834653eA7C3e4519d8795aD26FAcFa",
+        "symbol": "T2",
+        "decimals": 18,
+        "chainId": 122,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png",
+        "isMultiBridge": true
+      },
+      {
+        "name": "Test One on Fuse",
+        "address": "0x60C6f3CCb47f2c8d8e3943eBe956A1d6CE19C43E",
+        "symbol": "T1",
+        "decimals": 18,
+        "chainId": 122,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png",
+        "isMultiBridge":true
+      },
+      {
+        "name": "Test One on Fuse Deprecated",
+        "address": "0xc3CD52374F32fd381Db83939985E6ed2ff4A0549",
+        "symbol": "T1D",
+        "decimals": 18,
+        "chainId": 122,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png",
+        "isDeprecated": true
+      },
+      {
+        "name": "BNB on Fuse",
+        "address": "0x904a6D704b91DdaF4d0931f71b9807d95f9777cb",
+        "symbol": "BNB",
+        "decimals": 18,
+        "chainId": 122,
+        "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB8c77482e45F1F44dE1745F52C74426C631bDD52/logo.png"
+      }
+    ]
+  }

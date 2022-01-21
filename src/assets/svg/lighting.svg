@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="38px" viewBox="0 0 18 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <polygon id="path-1" points="0 0 18 0 18 38 0 38"></polygon>
+        <linearGradient x1="40.4885903%" y1="0%" x2="61.2188366%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#B1FFBF" offset="0%"></stop>
+            <stop stop-color="#FFF16D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-page-copy-10" transform="translate(-808.000000, -699.000000)">
+            <g id="Group-3" transform="translate(808.000000, 699.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M17.0147774,0.208399934 L2.64523797,16.9093478 C2.43948813,17.1620173 2.4987968,17.5370168 2.77337399,17.7139583 L7.84902481,20.991381 C8.08479509,21.1435653 8.16753435,21.4479338 8.04086274,21.6976907 L5.87865892,25.9675877 L0.0722666786,37.1840771 C-0.241117417,37.7593191 0.540146205,38.3003377 0.972879851,37.8066491 L9.21458869,29.0484087 L17.0440656,20.7510901 C17.2849614,20.4955079 17.2271171,20.0848288 16.9247161,19.9049747 L11.2406022,16.5219697 C10.9923844,16.3748825 10.9008587,16.061048 11.0311914,15.8047377 L17.9351601,0.80038941 C18.2331679,0.214225169 17.4306703,-0.302036255 17.0147774,0.208399934" id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,398 @@
+[
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [{ "type": "uint256", "name": "balance", "internalType": "uint256" }],
+    "name": "accountBalance",
+    "inputs": [{ "type": "address", "name": "account", "internalType": "address payable" }],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct CompoundLens.CTokenBalances",
+        "components": [
+          { "type": "address", "name": "cToken", "internalType": "address" },
+          { "type": "uint256", "name": "balanceOf", "internalType": "uint256" },
+          { "type": "uint256", "name": "borrowBalanceCurrent", "internalType": "uint256" },
+          { "type": "uint256", "name": "balanceOfUnderlying", "internalType": "uint256" },
+          { "type": "uint256", "name": "tokenBalance", "internalType": "uint256" },
+          { "type": "uint256", "name": "tokenAllowance", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "cTokenBalances",
+    "inputs": [
+      { "type": "address", "name": "cToken", "internalType": "contract CToken" },
+      { "type": "address", "name": "account", "internalType": "address payable" }
+    ],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct CompoundLens.CTokenBalances[]",
+        "components": [
+          { "type": "address", "name": "cToken", "internalType": "address" },
+          { "type": "uint256", "name": "balanceOf", "internalType": "uint256" },
+          { "type": "uint256", "name": "borrowBalanceCurrent", "internalType": "uint256" },
+          { "type": "uint256", "name": "balanceOfUnderlying", "internalType": "uint256" },
+          { "type": "uint256", "name": "tokenBalance", "internalType": "uint256" },
+          { "type": "uint256", "name": "tokenAllowance", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "cTokenBalancesAll",
+    "inputs": [
+      { "type": "address[]", "name": "cTokens", "internalType": "contract CToken[]" },
+      { "type": "address", "name": "account", "internalType": "address payable" }
+    ],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct CompoundLens.CTokenMetadata",
+        "components": [
+          { "type": "address", "name": "cToken", "internalType": "address" },
+          { "type": "uint256", "name": "exchangeRateCurrent", "internalType": "uint256" },
+          { "type": "uint256", "name": "supplyRatePerBlock", "internalType": "uint256" },
+          { "type": "uint256", "name": "borrowRatePerBlock", "internalType": "uint256" },
+          { "type": "uint256", "name": "reserveFactorMantissa", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalBorrows", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalReserves", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalSupply", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalCash", "internalType": "uint256" },
+          { "type": "bool", "name": "isListed", "internalType": "bool" },
+          { "type": "uint256", "name": "collateralFactorMantissa", "internalType": "uint256" },
+          { "type": "uint256", "name": "liquidationFactorMantissa", "internalType": "uint256" },
+          { "type": "uint256", "name": "liquidationIncentiveMantissa", "internalType": "uint256" },
+          { "type": "address", "name": "underlyingAssetAddress", "internalType": "address" },
+          { "type": "uint256", "name": "cTokenDecimals", "internalType": "uint256" },
+          { "type": "uint256", "name": "underlyingDecimals", "internalType": "uint256" },
+          { "type": "uint256", "name": "incentiveSpeed", "internalType": "uint256" },
+          { "type": "uint256", "name": "incentiveSupplySpeed", "internalType": "uint256" },
+          { "type": "uint256", "name": "incentiveBorrowSpeed", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "cTokenMetadata",
+    "inputs": [{ "type": "address", "name": "cToken", "internalType": "contract CToken" }],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct CompoundLens.CTokenMetadata[]",
+        "components": [
+          { "type": "address", "name": "cToken", "internalType": "address" },
+          { "type": "uint256", "name": "exchangeRateCurrent", "internalType": "uint256" },
+          { "type": "uint256", "name": "supplyRatePerBlock", "internalType": "uint256" },
+          { "type": "uint256", "name": "borrowRatePerBlock", "internalType": "uint256" },
+          { "type": "uint256", "name": "reserveFactorMantissa", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalBorrows", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalReserves", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalSupply", "internalType": "uint256" },
+          { "type": "uint256", "name": "totalCash", "internalType": "uint256" },
+          { "type": "bool", "name": "isListed", "internalType": "bool" },
+          { "type": "uint256", "name": "collateralFactorMantissa", "internalType": "uint256" },
+          { "type": "uint256", "name": "liquidationFactorMantissa", "internalType": "uint256" },
+          { "type": "uint256", "name": "liquidationIncentiveMantissa", "internalType": "uint256" },
+          { "type": "address", "name": "underlyingAssetAddress", "internalType": "address" },
+          { "type": "uint256", "name": "cTokenDecimals", "internalType": "uint256" },
+          { "type": "uint256", "name": "underlyingDecimals", "internalType": "uint256" },
+          { "type": "uint256", "name": "incentiveSpeed", "internalType": "uint256" },
+          { "type": "uint256", "name": "incentiveSupplySpeed", "internalType": "uint256" },
+          { "type": "uint256", "name": "incentiveBorrowSpeed", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "cTokenMetadataAll",
+    "inputs": [{ "type": "address[]", "name": "cTokens", "internalType": "contract CToken[]" }],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct CompoundLens.CTokenUnderlyingPrice",
+        "components": [
+          { "type": "address", "name": "cToken", "internalType": "address" },
+          { "type": "uint256", "name": "underlyingPrice", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "cTokenUnderlyingPrice",
+    "inputs": [{ "type": "address", "name": "cToken", "internalType": "contract CToken" }],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct CompoundLens.CTokenUnderlyingPrice[]",
+        "components": [
+          { "type": "address", "name": "cToken", "internalType": "address" },
+          { "type": "uint256", "name": "underlyingPrice", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "cTokenUnderlyingPriceAll",
+    "inputs": [{ "type": "address[]", "name": "cTokens", "internalType": "contract CToken[]" }],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct CompoundLens.AccountLimits",
+        "components": [
+          { "type": "address[]", "name": "markets", "internalType": "contract CToken[]" },
+          { "type": "uint256", "name": "liquidity", "internalType": "uint256" },
+          { "type": "uint256", "name": "shortfall", "internalType": "uint256" },
+          { "type": "uint256", "name": "liqFactorLiquidity", "internalType": "uint256" },
+          { "type": "uint256", "name": "liqFactorShortfall", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "getAccountLimits",
+    "inputs": [
+      { "type": "address", "name": "comptroller", "internalType": "contract ComptrollerLensInterface" },
+      { "type": "address", "name": "account", "internalType": "address" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct CompoundLens.AccountLimits",
+        "components": [
+          { "type": "address[]", "name": "markets", "internalType": "contract CToken[]" },
+          { "type": "uint256", "name": "liquidity", "internalType": "uint256" },
+          { "type": "uint256", "name": "shortfall", "internalType": "uint256" },
+          { "type": "uint256", "name": "liqFactorLiquidity", "internalType": "uint256" },
+          { "type": "uint256", "name": "liqFactorShortfall", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "getAccountLimitsAfterInterest",
+    "inputs": [
+      { "type": "address", "name": "comptroller", "internalType": "contract ComptrollerLensInterface" },
+      { "type": "address", "name": "account", "internalType": "address" }
+    ],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct CompoundLens.AccountLimits[]",
+        "components": [
+          { "type": "address[]", "name": "markets", "internalType": "contract CToken[]" },
+          { "type": "uint256", "name": "liquidity", "internalType": "uint256" },
+          { "type": "uint256", "name": "shortfall", "internalType": "uint256" },
+          { "type": "uint256", "name": "liqFactorLiquidity", "internalType": "uint256" },
+          { "type": "uint256", "name": "liqFactorShortfall", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "getAccountLimitsAll",
+    "inputs": [
+      { "type": "address", "name": "comptroller", "internalType": "contract ComptrollerLensInterface" },
+      { "type": "address[]", "name": "accounts", "internalType": "address[]" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct CompoundLens.CompBalanceMetadata",
+        "components": [
+          { "type": "uint256", "name": "balance", "internalType": "uint256" },
+          { "type": "uint256", "name": "votes", "internalType": "uint256" },
+          { "type": "address", "name": "delegate", "internalType": "address" }
+        ]
+      }
+    ],
+    "name": "getCompBalanceMetadata",
+    "inputs": [
+      { "type": "address", "name": "comp", "internalType": "contract Comp" },
+      { "type": "address", "name": "account", "internalType": "address" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct CompoundLens.CompBalanceMetadataExt",
+        "components": [
+          { "type": "uint256", "name": "balance", "internalType": "uint256" },
+          { "type": "uint256", "name": "votes", "internalType": "uint256" },
+          { "type": "address", "name": "delegate", "internalType": "address" },
+          { "type": "uint256", "name": "allocated", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "getCompBalanceMetadataExt",
+    "inputs": [
+      { "type": "address", "name": "comp", "internalType": "contract Comp" },
+      { "type": "address", "name": "comptroller", "internalType": "contract ComptrollerLensInterface" },
+      { "type": "address", "name": "account", "internalType": "address" }
+    ],
+    "constant": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct CompoundLens.CompVotes[]",
+        "components": [
+          { "type": "uint256", "name": "blockNumber", "internalType": "uint256" },
+          { "type": "uint256", "name": "votes", "internalType": "uint256" }
+        ]
+      }
+    ],
+    "name": "getCompVotes",
+    "inputs": [
+      { "type": "address", "name": "comp", "internalType": "contract Comp" },
+      { "type": "address", "name": "account", "internalType": "address" },
+      { "type": "uint32[]", "name": "blockNumbers", "internalType": "uint32[]" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct CompoundLens.GovProposal[]",
+        "components": [
+          { "type": "uint256", "name": "proposalId", "internalType": "uint256" },
+          { "type": "address", "name": "proposer", "internalType": "address" },
+          { "type": "uint256", "name": "eta", "internalType": "uint256" },
+          { "type": "address[]", "name": "targets", "internalType": "address[]" },
+          { "type": "uint256[]", "name": "values", "internalType": "uint256[]" },
+          { "type": "string[]", "name": "signatures", "internalType": "string[]" },
+          { "type": "bytes[]", "name": "calldatas", "internalType": "bytes[]" },
+          { "type": "uint256", "name": "startBlock", "internalType": "uint256" },
+          { "type": "uint256", "name": "endBlock", "internalType": "uint256" },
+          { "type": "uint256", "name": "forVotes", "internalType": "uint256" },
+          { "type": "uint256", "name": "againstVotes", "internalType": "uint256" },
+          { "type": "bool", "name": "canceled", "internalType": "bool" },
+          { "type": "bool", "name": "executed", "internalType": "bool" }
+        ]
+      }
+    ],
+    "name": "getGovProposals",
+    "inputs": [
+      { "type": "address", "name": "governor", "internalType": "contract GovernorAlpha" },
+      { "type": "uint256[]", "name": "proposalIds", "internalType": "uint256[]" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct CompoundLens.GovReceipt[]",
+        "components": [
+          { "type": "uint256", "name": "proposalId", "internalType": "uint256" },
+          { "type": "bool", "name": "hasVoted", "internalType": "bool" },
+          { "type": "bool", "name": "support", "internalType": "bool" },
+          { "type": "uint96", "name": "votes", "internalType": "uint96" }
+        ]
+      }
+    ],
+    "name": "getGovReceipts",
+    "inputs": [
+      { "type": "address", "name": "governor", "internalType": "contract GovernorAlpha" },
+      { "type": "address", "name": "voter", "internalType": "address" },
+      { "type": "uint256[]", "name": "proposalIds", "internalType": "uint256[]" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "getPriceForAsset",
+    "inputs": [
+      { "type": "address", "name": "len", "internalType": "address" },
+      { "type": "address", "name": "asset", "internalType": "address" }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "payable": false,
+    "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+    "name": "isCTokenForNative",
+    "inputs": [{ "type": "address", "name": "cToken", "internalType": "contract CToken" }],
+    "constant": true
+  }
+]
